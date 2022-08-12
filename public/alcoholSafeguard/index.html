@@ -10,11 +10,19 @@
                 width: 100%;
             }
 
+            p {
+                font-size: large;
+            }
+
             div.row img {
+                border: 1px solid #fff;
+            }
+
+            /* div.row img {
                 width: 38%;
                 height: 100%;
                 margin: auto;
-            }
+            } */
 
             div.row table {
                 width: 38%;
@@ -26,9 +34,17 @@
                 border: 1px solid #000;
                 padding: 8px;
             }
-
-            div.row div.spacer {
-                width: 4%;
+            td.top-left {
+                border-top-left-radius: 6px;
+            }
+            td.top-right {
+                border-top-right-radius: 6px;
+            }
+            td.bottom-left {
+                border-bottom-left-radius: 6px;
+            }
+            td.bottom-right {
+                border-bottom-right-radius: 6px;
             }
 
             div.botanicals {
@@ -42,26 +58,23 @@
             }
 
             div.ingredient div.img {
-                width: 35%;
                 margin: auto;
-            }
-            div.ingredient div.img img {
-                width: 100%;
-                height: 100%;
             }
 
             div.ingredient div.text {
-                width: 60%;
-                margin-left: 32px;
+                margin: 32px;
             }
+
+            div.ingredient.right div.text {
+                text-align: right;
+            }
+
             div.ingredient h2 {
                 font-size: xx-large;
-                font-family: sans-serif;
                 font-weight: 500;
             }
-            div.ingredient span {
-                font-size: large;
-                font-family: sans-serif;
+            div.ingredient p.mg {
+                font-size: x-large;
             }
 
             hr {
@@ -115,22 +128,22 @@
                 </a>
             </div>
         </div>
-
         
-        <div style="background-color: rgba(153, 51, 255, 0.2); padding: 64px;">
-          <h1>Alcohol Safeguard</h1>
+        <div style="background-color: rgba(153, 51, 255, 0.2); padding: 64px; box-shadow: inset 0 0 16px #888;">
+            <h1>Alcohol Safeguard</h1>
             <br>
-            
             <div class="row">
-                <img src="../../Aldehyde_dehydrogenase_enzyme.jpg" width="256" height="300" alt=""/>
-                <p style="font-size: large;">
-                    <br>
+                <img src="Acetaldehyde-3D.jpg" style="width: 300px; height: 300px; border-radius: 50px; box-shadow: 0 0 16px #888;">
+                <p style="margin: 64px;">
                     The villain of our story is acetaldehyde (BOO!).
                     When we consume alcohol, our bodies convert it into acetaldehyde.
                     This nasty chemical is 30 times more toxic than alcohol itself.
                     It is closely related to formaldehyde (which is used for embalming cadavers)
                     and is a major cause of alcohol's unpleasant side effects and hangovers.
-                    <br><br>
+                </p>
+            </div>
+            <div class="row">
+                <p style="margin: 64px;">
                     Acetaldehyde causes nearly all the damage to our brains and bodies that we blame on
                     alcohol-the skin wrinkling, artery hardening, liver damage, brain damage, cataracts,
                     decreased resistance to cancer and cardiovascular disease, premature aging, and hangover.
@@ -138,7 +151,12 @@
                     This is the same process that converts (tans) soft cattle skin into hard, stiff leather.
                     Cross-linking is largely responsible for age-related changes
                     in human skin that make it inflexible, wrinkled, and dry.
-                    <br><br>
+                </p>
+                <img src="Crosslinked_Leather.jpg" style="width: 300px; height: 300px; border-radius: 50px; box-shadow: 0 0 16px #888;">
+            </div>
+            <div class="row">
+                <img src="Aldehyde_dehydrogenase_enzyme.jpg" style="width: 256px; height: 300px; padding-left: 32px; padding-right: 32px; background-color: #fff; border-radius: 50px; box-shadow: 0 0 16px #888;">
+                <p style="margin: 64px;">
                     Our hero is an enzyme called aldehyde dehydrogenase (YAY!).
                     It transforms the toxic acetaldehyde into harmless common vinegar.
                     But when we drink alcohol, acetaldehyde is made faster
@@ -148,41 +166,45 @@
                     We attack this problem from every angle by
                     combining a wide array of nutritional supplements.
                 </p>
-                <img src="../../Crosslinked_Leather.jpg" width="300" height="300" alt=""/>                <img src="../../Acetaldehyde.jpg" width="300" height="300" alt=""/>
-                <img src="../../Acetaldehyde-3D.jpg" width="300" height="300" alt=""/>
-            </div>
-            <br><br>
-
             </div>
         </div>
 
         <div style="margin: 64px;">
-            <p style="font-size: large;">
-                A scientist at the National Cancer Institute named Herbert Sprince, PhD.
-                found that when rodents were given an "LD-90" dose of acetaldehyde
-                (the amount that would typically kill 90% of the animals)
-                and were also given vitamins B1 and C and cysteine,
-                these toxic effects were blocked entirely-none of the treated
-                animals succumbed to the deadly dose of acetaldehyde (Sprince 1975).
-                
-                Another study found that taking cysteine resulted in a reduction in hangovers,
-                nausea, and headache following alcohol consumption,
-                as well as reduced stress and anxiety (Eriksson 2020).<br><br>
-                Eggs are the best source of the amino acid cysteine,
-                and orange juice is an excellent source of vitamin C.
-                An old folk remedy for hangovers was to drop a raw egg
-                into a glass of orange juice and attempt to swill it down.
-                Now that we have discovered the active ingredients in eggs and OJ,
-                we no longer have to resort to this revolting remedy!
-                <br><br>
-                We need to take about 200 mg of cysteine for every alcoholic
-                drink to block most of the toxic effects of acetaldehyde.
-                This is the amount of cysteine contained in each
-                Alcohol Safeguard pill-plus the same amount of Vitamin C,
-                which is required to keep the cysteine in its activated state and
-                "on the job" against acetaldehyde (Eriksson 2020; McCarty 2013).
-            </p>
-            <img src="../../Scientist.jpg" width="300" height="300" alt=""/>            <img src="../../Gross.jpg" width="300" height="300" alt=""/> <br><br><br>
+            <div class="row">
+                <p style="margin: 64px;">
+                    A scientist at the National Cancer Institute named Herbert Sprince, PhD.
+                    found that when rodents were given an "LD-90" dose of acetaldehyde
+                    (the amount that would typically kill 90% of the animals)
+                    and were also given vitamins B1 and C and cysteine,
+                    these toxic effects were blocked entirely-none of the treated
+                    animals succumbed to the deadly dose of acetaldehyde (Sprince 1975).
+                    Another study found that taking cysteine resulted in a reduction in hangovers,
+                    nausea, and headache following alcohol consumption,
+                    as well as reduced stress and anxiety (Eriksson 2020).
+                </p>
+                <img src="Scientist.jpg" style="width: 300px; height: 300px; border-radius: 50px;">
+            </div>
+            <div class="row">
+                <img src="Gross.jpg" style="width: 300px; height: 300px; border-radius: 50px;">
+                <p style="margin: 64px;">
+                    Eggs are the best source of the amino acid cysteine,
+                    and orange juice is an excellent source of vitamin C.
+                    An old folk remedy for hangovers was to drop a raw egg
+                    into a glass of orange juice and attempt to swill it down.
+                    Now that we have discovered the active ingredients in eggs and OJ,
+                    we no longer have to resort to this revolting remedy!
+                </p>
+            </div>
+            <div class="row">
+                <p style="margin: 64px;">
+                    We need to take about 200 mg of cysteine for every alcoholic
+                    drink to block most of the toxic effects of acetaldehyde.
+                    This is the amount of cysteine contained in each
+                    Alcohol Safeguard pill-plus the same amount of Vitamin C,
+                    which is required to keep the cysteine in its activated state and
+                    "on the job" against acetaldehyde (Eriksson 2020; McCarty 2013).
+                </p>
+            </div>
             <hr>
             <br><br><br>
 
@@ -198,77 +220,71 @@
             <div class="botanicals">
                 <div class="ingredient">
                     <div class="img">
-                        <img src="thistle.jpg">
+                        <img src="thistle.jpg" style="width: 300px; height: 300px;">
                     </div>
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Milk Thistle Extract</h2>
                         <br>
-                        <p>200 mg</p>
+                        <p class="mg">200 mg</p>
                         <br>
-                        <span>
+                        <p>
                             Milk Thistle extract is a potent antioxidant,
                             widely used throughout Europe for treating liver disease.
                             It protects the liver from alcohol-induced damage -
                             particularly reductions in liver glutathione levels (Vargas-Mendoza 2014).
-                        </span>
-                        <br><br><br>
+                        </p>
                     </div>
                 </div>
                 <br><hr><br>
-                <div class="ingredient">
-                    <div class="img">
-                        <img src="theanine.png">
-                    </div>
+                <div class="ingredient right">
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Theanine</h2>
                         <br>
-                        <p>100 mg</p>
+                        <p class="mg">100 mg</p>
                         <br>
-                        <span>
+                        <p>
                             Green tea is the best source of this amino acid.
                             It has been shown to protect our brains from alcohol by blocking free radicals,
                             counteracting the loss of glutathione, improving sleep, and breaking down acetaldehyde.
                             It can also make you feel less intoxicated.
                             When researchers gave theanine to mice, it reduced blood levels of alcohol (Sadzuka 2005).
-                        </span>
-                        <br><br><br>
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="theanine.png" style="width: 300px; height: 300px;">
                     </div>
                 </div>
                 <br><hr><br>
                 <div class="ingredient">
                     <div class="img">
-                        <img src="ginger.jpg">
+                        <img src="ginger.jpg" style="width: 300px; height: 300px;">
                     </div>
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Ginger Extract</h2>
                         <br>
-                        <p>180 mg</p>
+                        <p class="mg">180 mg</p>
                         <br>
-                        <span>
+                        <p>
                             Ginger is a traditional Chinese herbal medicine.
                             It is an antioxidant, and it protects the liver,
                             and it has been used for centuries as a hangover treatment (Fang 2016).
                             It has anti-sickness properties that may help settle upset stomachs,
                             and it is an effective remedy for nausea (Palatty 2013).
-                        </span>
-                        <br><br><br>
+                        </p>
                     </div>
                 </div>
                 <br><hr><br>
-                <div class="ingredient">
-                    <div class="img">
-                        <img src="prickly.png">
-                    </div>
+                <div class="ingredient right">
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Prickly Pear Extract</h2>
                         <br>
-                        <p>150 mg</p>
+                        <p class="mg">150 mg</p>
                         <br>
-                        <span>
+                        <p>
                             The delicious red fruit of the pear cactus has strong
                             antioxidant properties and it is a proven hangover remedy.
                             Research has shown that the fruit reduces hangover symptoms,
@@ -276,22 +292,24 @@
                             According to this study, prickly pear may cut hangover severity by half.
                             And it has shown strong liver-protective effects when
                             animals are exposed to high levels of alcohol (Rouma 2012).
-                        </span>
-                        <br><br><br>
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="prickly.png" style="width: 300px; height: 300px;">
                     </div>
                 </div>
                 <br><hr><br>
                 <div class="ingredient">
                     <div class="img">
-                        <img src="ginseng.png" style="aspect-ratio: 1;">
+                        <img src="ginseng.png" style="width: 300px; height: 300px;">
                     </div>
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Ginseng Extract</h2>
                         <br>
-                        <p>160 mg</p>
+                        <p class="mg">160 mg</p>
                         <br>
-                        <span>
+                        <p>
                             Korean Red Ginseng is a medicinal plant historically used to treat fatigue,
                             increase energy, and build stamina and resilience (Kim 2013; Ong 2015).
                             Scientists gave 32 mg of ginseng extract to 25 healthy male whisky drinkers and
@@ -304,22 +322,18 @@
                             tissue injury by inhibiting free radical activity and inflammation
                             (Li 2014; Gao 2015) and by increasing rates of alcohol and acetaldehyde
                             clearance from the body (Lee, Kim 2014).
-                        </span>
-                        <br><br><br>
+                        </p>
                     </div>
                 </div>
                 <br><hr><br>
-                <div class="ingredient">
-                    <div class="img">
-                        <img src="dhm.jpg">
-                    </div>
+                <div class="ingredient right">
                     <div class="text">
-                        <br><br>
+                        <br>
                         <h2>Dihydromyricetin (from Vine Tree)</h2>
                         <br>
-                        <p>1200 mg</p>
+                        <p class="mg">1200 mg</p>
                         <br>
-                        <span>
+                        <p>
                             Finally, we come to what may be the most important ingredient
                             in our formula: vine tree extract (dihydromyricetin).
                             The vine tree is a well-known and scientifically studied herb used for centuries in China,
@@ -327,11 +341,14 @@
                             Over 400 studies on its health benefits (viewable on PubMed)
                             show the degree of scientific interest in this extract and
                             its power against the side effects of alcohol.
-                        </span>
-                        <br><br><br>
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="dhm.jpg" style="width: 300px; height: 300px;">
                     </div>
                 </div>
             </div>
+            
             <p style="width: 75%; margin: auto;">
                 In addition to protecting the liver against alcohol-related damage (Silva 2020),
                 recent studies have shown that Vine Tree extract reduces loss of coordination,
@@ -366,7 +383,7 @@
             <h1>Glutathione Boosters</h1>
             <br>
             <div class="row">
-                <p style="width: 20%; margin: auto; padding-right: 16px;">
+                <p style="width: 33%;">
                     Glutathione is the body's primary acetaldehyde (and formaldehyde) detox agent.
                     It acts as an antioxidant, a free radical scavenger,
                     and it is sometimes referred to as "the master antioxidant".
@@ -378,36 +395,32 @@
                     that increases our body's ability to make glutathione and our cell's
                     ability to absorb cysteine (Chen 2013; Lee 2009; Sanders 1996). 
                 </p>
-                <img src="vitamins.jpg">
-                <div class="spacer"></div>
+
+                <img src="vitamins.jpg" style="width: 300px; height: 300px; margin: auto;">
+
                 <table>
                     <thead>
                         <tr>
-                            <td>Amino Acid</td>
-                            <td>Quantity</td>
-                            <td>% RDA</td>
+                            <td class="top-left">Amino Acid</td>
+                            <td class="top-right">Quantity</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Alpha Lipoic Acid</td>
                             <td>100 mg</td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>L-Cysteine HCL</td>
                             <td>1000 mg</td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>L-Glutamic Acid HCL</td>
                             <td>100 mg</td>
-                            <td></td>
                         </tr>
                         <tr>
-                            <td>L-Glycine</td>
-                            <td>50 mg</td>
-                            <td></td>
+                            <td class="bottom-left">L-Glycine</td>
+                            <td class="bottom-right">50 mg</td>
                         </tr>
                     </tbody>
                 </table>
@@ -423,67 +436,68 @@
                 <table>
                     <thead>
                         <tr>
-                            <td>Vitamin</td>
+                            <td class="top-left">Vitamin</td>
                             <td>Quantity</td>
-                            <td>% RDA</td>
+                            <td class="top-right">% RDA</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Vitamin B1 (Thiamine)</td>
                             <td>240 mg</td>
-                            <td></td>
+                            <td>20000%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B2 (Riboflavin)</td>
                             <td>20 mg</td>
-                            <td></td>
+                            <td>1538%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B3 (Niacinamide Ascorbate)</td>
                             <td>20 mg</td>
-                            <td></td>
+                            <td>125%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B5 (Calcium Pantothenate)</td>
                             <td>100 mg</td>
-                            <td></td>
+                            <td>2000%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B6 (Pyridoxine Hydrochloride)</td>
                             <td>24 mg</td>
-                            <td></td>
+                            <td>2000%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B7 (Biotin)</td>
                             <td>100 mcg</td>
-                            <td></td>
+                            <td>333%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B9 (Folic Acid)</td>
                             <td>400 mcg</td>
-                            <td></td>
+                            <td>100%</td>
                         </tr>
                         <tr>
                             <td>Vitamin B12 (Methylcobalamin)</td>
                             <td>100 mcg</td>
-                            <td></td>
+                            <td>4167%</td>
                         </tr>
                         <tr>
                             <td>Vitamin C (Ascorbic Acid)</td>
                             <td>1000 mg</td>
-                            <td></td>
+                            <td>1333%</td>
                         </tr>
                         <tr>
-                            <td>Vitamin E (Tocopheryl Acetate)</td>
+                            <td class="bottom-left">Vitamin E (Tocopheryl Acetate)</td>
                             <td>35 IU</td>
-                            <td></td>
+                            <td class="bottom-right">233%</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="spacer"></div>
-                <img src="vitamins.jpg">
-                <p style="width: 20%; margin: auto; padding-left: 16px;">
+
+                <img src="vitamins.jpg" style="width: 300px; height: 300px; margin: auto;">
+
+                <p style="width: 33%;">
                     Vitamin B1 is quickly destroyed by acetaldehyde.
                     A lack of Vitamin B1 has been shown to damage brain cells and cause lethargy,
                     fatigue, apathy, impaired awareness, loss of equilibrium, disorientation, and memory loss.
@@ -520,7 +534,7 @@
             <h1>Electrolytes and Minerals</h1>
             <br>
             <div class="row">
-                <p style="width: 20%; margin: auto; padding-right: 16px;">
+                <p style="width: 33%;">
                     Alcohol is a diuretic that causes our bodies to lose water (Hobson 2010).
                     And we lose electrolytes along with that water.
                     Electrolytes are minerals that carry an electric charge
@@ -534,51 +548,47 @@
                     This can result in jangled nerves where even mild noises sound excessively loud,
                     lights seem too bright, and emotional reactions are exaggerated (Min 2010; Romani 2008).
                 </p>
-                <img src="minerals.jpg">
-                <div class="spacer"></div>
+                
+                <img src="minerals.jpg" style="width: 300px; height: 300px; margin: auto;">
+                
                 <table>
                     <thead>
                         <tr>
-                            <td>Mineral</td>
+                            <td class="top-left">Mineral</td>
                             <td>Quantity</td>
-                            <td>% RDA</td>
+                            <td class="top-right">% RDA</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Calcium (Carbonate)</td>
                             <td>50 mg</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Chromium (Picolinate)</td>
-                            <td>200 mcg</td>
-                            <td></td>
+                            <td>4%</td>
                         </tr>
                         <tr>
                             <td>Magnesium (Carbonate)</td>
                             <td>50 mg</td>
-                            <td></td>
+                            <td>12%</td>
                         </tr>
                         <tr>
                             <td>Potassium (Carbonate)</td>
                             <td>100 mg</td>
-                            <td></td>
+                            <td>3%</td>
                         </tr>
                         <tr>
                             <td>Selenium (Selenomethionine)</td>
                             <td>100 mcg</td>
-                            <td></td>
+                            <td>182%</td>
                         </tr>
                         <tr>
                             <td>Sodium (Pink Hymalayan Salt)</td>
                             <td>100 mg</td>
-                            <td></td>
+                            <td>4%</td>
                         </tr>
                         <tr>
-                            <td>Zinc (Zinc Gluconate)</td>
-                            <td>12 mg</td>
-                            <td></td>
+                            <td class="bottom-left">Zinc (Zinc Gluconate)</td>
+                            <td>11 mg</td>
+                            <td class="bottom-right">100%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -591,10 +601,9 @@
                 Heavy drinking reduces blood and liver selenium levels,
                 resulting in lower glutathione activity (Rua 2014; Ojeda 2015).
             </p>
-
-            <br><br><br>
-            <hr>
         </div>
+
+        <hr style="margin: 64px;">
 
         <p style="width: 75%; margin: auto;">
             The best way to use Alcohol Safeguard is to "preload" your body with one
