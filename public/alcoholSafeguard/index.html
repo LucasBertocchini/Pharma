@@ -3,188 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../style.css">
-        <style>
-            body {
-                background-color: rgba(153, 51, 255, 0.1);
-            }
-
-            div#main-box-shadow {
-                width: 960px;
-                margin: auto;
-                box-shadow: 0 0 16px #aaa;
-                border-radius: 24px;
-            }
-
-            div#main {
-                width: 832px; /* 960 - 64*2 */
-                padding: 64px;
-                background-color: #fff;
-            }
-
-            p {
-                font-size: large;
-            }
-
-            div.row {
-                display: flex;
-                flex-flow: row;
-                width: 100%;
-            }
-            div.row.table img {
-                margin: auto;
-            }
-            div.row.table p {
-                width: 200px;
-            }
-            div.row.table table {
-                width: 300px;
-                border: 1px solid #000;
-                border-radius: 8px;
-                box-shadow: 0 0 8px #888;
-            }
-            div.row.table table td {
-                border: 1px solid #000;
-                padding: 4px;
-            }
-            div.row.table table thead {
-                background-color: rgba(153, 51, 255, 0.2);
-            }
-            div.row.table table tr:nth-child(even) {
-                background-color: #ddd;
-            }
-            td.top-left {
-                border-top-left-radius: 6px;
-            }
-            td.top-right {
-                border-top-right-radius: 6px;
-            }
-            td.bottom-left {
-                border-bottom-left-radius: 6px;
-            }
-            td.bottom-right {
-                border-bottom-right-radius: 6px;
-            }
-
-            div.botanicals {
-                margin-left:  64px;
-                margin-right: 64px;
-            }
-
-            div.ingredient {
-                display: flex;
-                flex-flow: row;
-            }
-
-            div.ingredient div.img {
-                margin: auto;
-            }
-
-            div.ingredient div.text {
-                margin-left: 32px;
-            }
-            div.ingredient.right div.text {
-                margin-left: 0;
-                margin-right: 32px;
-            }
-
-            div.ingredient span.h2 {
-                font-size: xx-large;
-                font-weight: 500;
-            }
-            div.ingredient span.mg {
-                font-size: x-large;
-                padding-left: 32px;
-            }
-
-            hr {
-                margin: 0;
-            }
-
-            h1 {
-                text-align: center;
-            }
-
-            div.order {
-                width: 100%;
-                text-align: center;
-            }
-            div.order a {
-                background-color: rgba(153, 51, 255, 0.5);
-                text-align: center;
-                font-size: 32px;
-                font-family: sans-serif;
-                padding: 16px;
-                margin: auto;
-                border-radius: 32px;
-                color: #000;
-                text-decoration: none;
-                box-shadow: 0 0 8px #888;
-            }
-
-            div.elevated {
-                width: 300px;
-                height: 300px;
-                padding: 16px;
-                padding-bottom: 32px;
-                border-radius: 66px;
-                /* box-shadow: 0 0 16px rgb(153, 51, 255); */
-                background-color: #fff;/*rgb(229, 200, 255);*/
-                display: flex;
-                flex-flow: column;
-            }
-            div.elevated img {
-                border-radius: 50px;
-            }
-            div.elevated span {
-                width: 300px;
-                text-align: center;
-                font-size: 18px;
-                padding: 5px;
-            }
-
-            div.tooltip {
-                position: absolute;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                background-color: #fff;
-                padding: 8px;
-                transition: opacity 0.2s, top 0.2s;
-                box-shadow: 0 0 4px #ccc;
-            }
-            .caret {
-                width: 0;
-                height: 0;
-                display: inline-block;
-                position: absolute;
-                transition: opacity 0.2s, top 0.2s;
-            }
-            .caret-border {
-                border: 6px solid transparent;
-                border-top-color: #ccc;
-            }
-            .caret-inner {
-                border: 5px solid transparent;
-                border-top-color: #fff;
-            }
-
-            sup a {
-                text-decoration: none;
-            }
-
-            /* ol li {
-                transition: background-color 0.5s;
-            } */
-
-            p.thinner {
-                margin-left:  64px;
-                margin-right: 64px;
-            }
-
-            img.img300 {
-                width: 300px;
-                height: 300px;
-            }
-        </style>
+        <link rel="stylesheet" href="./alcoholSafeguard.css">
     </head>
     <body>
         <div id="main-box-shadow">
@@ -194,13 +13,13 @@
                     <a href="/boneHealth/">
                         <span>Bone Safeguard</span>
                     </a>
-                    <a href="/alcoholSafeguard/">
+                    <a href="/alcoholSafeguard/" class="active">
                         <span>Alcohol Safeguard</span>
                     </a>
                 </div>
                 <div id="nav-center">
                     <a href="/">
-                        <img class="logo" src="/logo.jpg">
+                        <img class="logo" src="../logo.gif">
                     </a>
                 </div>
                 <div id="nav-right">
@@ -212,530 +31,557 @@
                     </a>
                 </div>
             </div>
+
             <div id="main">
-                <div>
-                    <h1>Alcohol Safeguard</h1>
-                    <br>
-                    <div class="row">
-                        <div class="elevated">
-                            <img src="Acetaldehyde-3D.jpg" title="Acetaldehyde" class="img300">
-                            <span>Acetaldehyde</span>
-                        </div>
-                        <p style="margin: 64px;">
-                            The villain of our story is acetaldehyde (BOO!).
-                            When we consume alcohol, our bodies convert it into acetaldehyde.
-                            This nasty chemical is 30 times more toxic than alcohol itself.
-                            It is closely related to formaldehyde (which is used for embalming cadavers)
-                            and is a major cause of alcohol's unpleasant side effects and hangovers.
-                        </p>
+                <h1>Alcohol Safeguard</h1>
+                <br>
+                <div class="row">
+                    <div class="elevated">
+                        <img src="Acetaldehyde-3D.jpg" title="Acetaldehyde" class="img300">
+                        <span>Acetaldehyde</span>
                     </div>
-                    <div class="row">
-                        <p style="margin: 64px;">
-                            Acetaldehyde causes nearly all the damage to our brains and bodies that we blame on
-                            alcohol-the skin wrinkling, artery hardening, liver damage, brain damage, cataracts,
-                            decreased resistance to cancer and cardiovascular disease, premature aging, and hangover.
-                            It does this by causing an abnormal chemical process called cross-linking.
-                            This is the same process that converts (tans) soft cattle skin into hard, stiff leather.
-                            Cross-linking is largely responsible for age-related changes
-                            in human skin that make it inflexible, wrinkled, and dry.
-                        </p>
-                        <div class="elevated">
-                            <img src="Crosslinked_Leather.jpg" title="Cross-linked Leather" class="img300">
-                            <span>Cross-linked Leather</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="elevated">
-                            <img src="Aldehyde_dehydrogenase_enzyme.jpg" title="Aldehyde Dehydrogenase" class="img300">
-                            <span>Aldehyde Dehydrogenase</span>
-                        </div>
-                        <p style="margin: 64px;">
-                            Our hero is an enzyme called aldehyde dehydrogenase (YAY!).
-                            It transforms the toxic acetaldehyde into harmless common vinegar.
-                            But when we drink alcohol, acetaldehyde is made faster
-                            than the heroic aldehyde enzyme can eliminate it.
-                            We designed our formula to protect ourselves from
-                            acetaldehyde toxicity and vanquish the villain.
-                            We attack this problem from every angle by
-                            combining a wide array of nutritional supplements.
-                        </p>
-                    </div>
-
-                    <br><br><br>
-                    <hr>
-                    <br><br><br>
-
-                    <div class="row">
-                        <p style="margin: 64px;">
-                            A scientist at the National Cancer Institute named Herbert Sprince, PhD.
-                            found that when rodents were given an "LD-90" dose of acetaldehyde
-                            (the amount that would typically kill 90% of the animals)
-                            and were also given vitamins B1 and C and cysteine,
-                            these toxic effects were blocked entirely-none of the treated
-                            animals succumbed to the deadly dose of acetaldehyde.
-                            <sup class="reference Sprince-1975 left"><a href="#Sprince-1975-reference">[35]</a></sup>
-                            Another study found that taking cysteine resulted in a reduction in hangovers,
-                            nausea, and headache following alcohol consumption,
-                            as well as reduced stress and anxiety.
-                            <sup class="reference Eriksson-2020 left"><a href="#Eriksson-2020-reference">[6]</a></sup>
-                        </p>
-                        <div class="elevated">
-                            <img src="Scientist.jpg" title="Scientist" class="img300">
-                            <span>Scientist</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="elevated">
-                            <img src="Gross.jpg" title="Gross" class="img300">
-                            <span>Gross</span>
-                        </div>
-                        <p style="margin: 64px;">
-                            Eggs are the best source of the amino acid cysteine,
-                            and orange juice is an excellent source of vitamin C.
-                            An old folk remedy for hangovers was to drop a raw egg
-                            into a glass of orange juice and attempt to swill it down.
-                            Now that we have discovered the active ingredients in eggs and OJ,
-                            we no longer have to resort to this revolting remedy!
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p style="margin: 64px;">
-                            We need to take about 200 mg of cysteine for every alcoholic
-                            drink to block most of the toxic effects of acetaldehyde.
-                            This is the amount of cysteine contained in each
-                            Alcohol Safeguard pill-plus the same amount of Vitamin C,
-                            which is required to keep the cysteine in its activated state and
-                            "on the job" against acetaldehyde.
-                            <sup class="reference Eriksson-2020 center"><a href="#Eriksson-2020-reference">[6]</a></sup>
-                            <sup class="reference McCarty-2013 center"><a href="#McCarty-2013-reference">[21]</a></sup>
-                        </p>
-                    </div>
-                    <hr>
-                    <br><br><br>
-
-                    <h1>Vitamins</h1>
-                    <br>
-                    <div class="row table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td class="top-left">Vitamin</td>
-                                    <td>Quantity</td>
-                                    <td class="top-right">% RDA</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Vitamin B1 (Thiamine)</td>
-                                    <td>240 mg</td>
-                                    <td>20000%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B2 (Riboflavin)</td>
-                                    <td>20 mg</td>
-                                    <td>1538%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B3 (N. Ascorbate)</td>
-                                    <td>20 mg</td>
-                                    <td>125%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B5 (Calcium Pantothenate)</td>
-                                    <td>100 mg</td>
-                                    <td>2000%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B6 (Pyridoxine HCL)</td>
-                                    <td>24 mg</td>
-                                    <td>2000%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B7 (Biotin)</td>
-                                    <td>100 mcg</td>
-                                    <td>333%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B9 (Folic Acid)</td>
-                                    <td>400 mcg</td>
-                                    <td>100%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin B12 (Methylcobalamin)</td>
-                                    <td>100 mcg</td>
-                                    <td>4167%</td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin C (Ascorbic Acid)</td>
-                                    <td>1000 mg</td>
-                                    <td>1333%</td>
-                                </tr>
-                                <tr>
-                                    <td class="bottom-left">Vitamin E (Tocopheryl Acetate)</td>
-                                    <td>35 IU</td>
-                                    <td class="bottom-right">233%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <img src="vitamins.jpg" class="img300">
-
-                        <p>
-                            Vitamin B1 is quickly destroyed by acetaldehyde.
-                            A lack of Vitamin B1 has been shown to damage brain cells and cause lethargy,
-                            fatigue, apathy, impaired awareness, loss of equilibrium, disorientation, and memory loss.
-                            When vitamin B1 became available in an injectable form earlier last century,
-                            medical interns discovered they could treat a hangover by taking large doses.
-                            <br><br>
-                            Vitamin B1 is the most important B vitamin to take when consuming alcohol.
-                            <sup class="reference Ambadath-2010 right"><a href="#Ambadath-2010-reference">[1]</a></sup>
-                            But alcohol depletes all the B vitamins, particularly vitamins
-                            B3, B6, folic acid (Vitamin B9),
-                            <sup class="reference Medici-2013 right"><a href="#Medici-2013-reference">[22]</a></sup>
-                            and Vitamin B12.
-                            <sup class="reference Gibson-2008 right"><a href="#Gibson-2008-reference">[9]</a></sup>
-                        </p>
-                    </div>
-                    <br>
-                    <p>
-                        Vitamin B3 has been shown to significantly reduce hangover severity.
-                        <sup class="reference Verster-2019 center"><a href="#Verster-2019-reference">[38]</a></sup>
-                    </p>
-                    <br>
-                    <p>
-                        A deficiency of vitamin B5 contributes to the hangover symptoms of headache, nausea, and fatigue.
-                        And Vitamin B5 is needed for processing acetaldehyde into vinegar.
-                    </p>
-                    <br>
-                    <p>
-                        Researchers found that people receiving vitamin B6 had significantly fewer hangover
-                        symptoms the following morning than did people receiving a placebo.
-                        <sup class="reference Khan-1973 center"><a href="#Khan-1973-reference">[12]</a></sup>
-                        Vitamin B6 is required for normal synthesis of both cysteine,
-                        <sup class="reference EFSA-2010 center"><a href="#EFSA-2010-reference">[5]</a></sup>
-                        and glutathione.
-                        <sup class="reference Mosharov-2000 center"><a href="#Mosharov-2000-reference">[23]</a></sup>
-                    </p>
-                    <br>
-                    <p>
-                        Another way acetaldehyde causes damage is by creating dangerous
-                        and reactive chemical fragments called free radicals.
-                        <sup class="reference Han-2016 center"><a href="#Han-2016-reference">[10]</a></sup>
-                        Our bodies must have an ample supply of antioxidants to neutralize these chemicals.
-                        Our formula includes generous amounts of free radical-controlling nutrients.
-                        Vitamins B1, B5, B6, C, E, and glutathione are all free radical scavengers,
-                        as is the zinc-dependent enzyme SOD.
-                        <sup class="reference McCarty-2013 center"><a href="#McCarty-2013-reference">[21]</a></sup>
-                        <sup class="reference Das-2010 center"><a href="#Das-2010-reference">[4]</a></sup>
-                    </p>
-
-                    <br><br><br>
-                    <hr>
-                    <br><br><br>
-
-                    <h1>Electrolytes and Minerals</h1>
-                    <br>
-                    <div class="row table">
-                        <p>
-                            Alcohol is a diuretic that causes our bodies to lose water (Hobson 2010).
-                            And we lose electrolytes along with that water.
-                            Electrolytes are minerals that carry an electric charge
-                            and help with muscle, brain, and nerve function.
-                            Common electrolytes include sodium, potassium, calcium, and magnesium
-                            (all of which are included in our formula).
-                        </p>
-                        
-                        <img src="minerals.jpg" class="img300">
-                        
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td class="top-left">Mineral</td>
-                                    <td>Quantity</td>
-                                    <td class="top-right">% RDA</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Calcium (Carbonate)</td>
-                                    <td>50 mg</td>
-                                    <td>4%</td>
-                                </tr>
-                                <tr>
-                                    <td>Magnesium (Carbonate)</td>
-                                    <td>50 mg</td>
-                                    <td>12%</td>
-                                </tr>
-                                <tr>
-                                    <td>Potassium (Carbonate)</td>
-                                    <td>100 mg</td>
-                                    <td>3%</td>
-                                </tr>
-                                <tr>
-                                    <td>Selenium (Selenomethionine)</td>
-                                    <td>100 mcg</td>
-                                    <td>182%</td>
-                                </tr>
-                                <tr>
-                                    <td>Sodium (Pink Himalayan Salt)</td>
-                                    <td>100 mg</td>
-                                    <td>4%</td>
-                                </tr>
-                                <tr>
-                                    <td class="bottom-left">Zinc (Zinc Gluconate)</td>
-                                    <td>11 mg</td>
-                                    <td class="bottom-right">100%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <br>
-                    <p>
-                        Electrolytes are crucial for the body's nerve responses,
-                        muscle contractions, and water balance.
-                        Low levels of potassium can cause feelings of weakness and shakiness.
-                        Low magnesium levels can cause nerves to fire too easily - even from minor stimuli.
-                        This can result in jangled nerves where even mild noises sound excessively loud,
-                        lights seem too bright, and emotional reactions are exaggerated (Min 2010; Romani 2008).
-                    </p>
-                    <br>
-                    <p>
-                        Zinc has been shown to significantly reduce vomiting and hangover severity (Verster 2019).
-                    </p>
-                    <br>
-                    <p>
-                        Selenium is needed for the proper function of glutathione.
-                        Heavy drinking reduces blood and liver selenium levels,
-                        resulting in lower glutathione activity (Rua 2014; Ojeda 2015).
-                    </p>
-
-                    <br><br><br>
-                    <hr>
-                    <br><br><br>
-
-                    <h1>Glutathione Boosters</h1>
-                    <br>
-                    <div class="row table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td class="top-left">Glutathione Boosters</td>
-                                    <td class="top-right">Quantity</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alpha Lipoic Acid</td>
-                                    <td>100 mg</td>
-                                </tr>
-                                <tr>
-                                    <td>L-Cysteine HCL</td>
-                                    <td>1000 mg</td>
-                                </tr>
-                                <tr>
-                                    <td>L-Glutamic Acid HCL</td>
-                                    <td>100 mg</td>
-                                </tr>
-                                <tr>
-                                    <td class="bottom-left">L-Glycine</td>
-                                    <td class="bottom-right">50 mg</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <img src="vitamins.jpg" class="img300" style="margin: auto;">
-
-                        <p>
-                            Glutathione is the body's primary acetaldehyde (and formaldehyde) detox agent.
-                            It acts as an antioxidant, a free radical scavenger,
-                            and it is sometimes referred to as "the master antioxidant".
-                            Glutathione is composed of cysteine, glutamic acid, and glycine.
-                            Our bodies do not readily absorb glutathione,
-                            but we can make it by taking these three precursors.
-                        </p>
-                    </div>
-                    <br>
-                    <p>
-                        Alcohol Safeguard supplies all three easily-absorbed glutathione
-                        boosters-along with alpha lipoic acid-another powerful antioxidant
-                        that increases our body's ability to make glutathione and our cell's
-                        ability to absorb cysteine (Chen 2013; Lee 2009; Sanders 1996).
-                        And glutamine (which the body makes from Glutamic Acid) also accelerates alcohol metabolism (Uneyama 2017).
-                    </p>
-
-                    <br><br><br>
-                    <hr>
-                    <br><br><br>
-
-                    <h1>Botanicals</h1>
-                    <br>
-                    <p class="thinner">
-                        Our livers are responsible for detoxifying alcohol.
-                        To function properly, the liver needs all known vitamins, minerals,
-                        and amino acids, plus special nutrients such as alpha lipoic acid.
-                        Some nutrients found in plants promote and even repair liver function.
-                    </p>
-                    <br>
-                    <div class="botanicals">
-                        <div class="ingredient">
-                            <div class="img">
-                                <img src="Milk-Thistle.png" class="img300">
-                            </div>
-                            <div class="text">
-                                <br>
-                                <span class="h2">Milk Thistle Extract</span>
-                                <span class="mg">200 mg</span>
-                                <br><br>
-                                <p>
-                                    Milk Thistle extract is a potent antioxidant,
-                                    widely used throughout Europe for treating liver disease.
-                                    It protects the liver from alcohol-induced damage -
-                                    particularly reductions in liver glutathione levels (Vargas-Mendoza 2014).
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="ingredient right">
-                            <div class="text">
-                                <br>
-                                <span class="h2">Theanine</span>
-                                <span class="mg">100 mg</span>
-                                <br><br>
-                                <p>
-                                    Green tea is the best source of this amino acid.
-                                    It has been shown to protect our brains from alcohol by blocking free radicals,
-                                    counteracting the loss of glutathione, improving sleep, and breaking down acetaldehyde.
-                                    It can protect against alcoholic liver injury (Li 2012), and it can also make you feel less intoxicated.
-                                    When researchers gave theanine to mice, it reduced blood levels of alcohol (Sadzuka 2005).
-                                </p>
-                            </div>
-                            <div class="img">
-                                <img src="Theanine.jpg" class="img300">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="ingredient">
-                            <div class="img">
-                                <img src="Ginger.jpg" class="img300">
-                            </div>
-                            <div class="text">
-                                <br>
-                                <span class="h2">Ginger Extract</span>
-                                <span class="mg">180 mg</span>
-                                <br><br>
-                                <p>
-                                    Ginger is a traditional Chinese herbal medicine.
-                                    It is an antioxidant, and it protects the liver,
-                                    and it has been used for centuries as a hangover treatment (Fang 2016).
-                                    It has anti-sickness properties that may help settle upset stomachs,
-                                    and it is an effective remedy for nausea (Palatty 2013).
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="ingredient right">
-                            <div class="text">
-                                <br>
-                                <span class="h2">Prickly Pear Extract</span>
-                                <span class="mg">150 mg</span>
-                                <br><br>
-                                <p>
-                                    The delicious red fruit of the pear cactus has strong
-                                    antioxidant properties and it is a proven hangover remedy.
-                                    Research has shown that the fruit reduces hangover symptoms,
-                                    including nausea and dry mouth.
-                                    <sup class="reference Wiese-2004 left"><a href="#Wiese-2004-reference">[39]</a></sup>
-                                    According to this study, prickly pear may cut hangover severity by half.
-                                    And it has shown strong liver-protective effects when
-                                    animals are exposed to high levels of alcohol (Rouma 2012).
-                                </p>
-                            </div>
-                            <div class="img">
-                                <img src="Prickly-Pear.jpg" class="img300">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="ingredient">
-                            <div class="img">
-                                <img src="Ginseng.jpg" class="img300">
-                            </div>
-                            <div class="text">
-                                <br>
-                                <span class="h2">Ginseng Extract</span>
-                                <span class="mg">160 mg</span>
-                                <br><br>
-                                <p>
-                                    Korean Red Ginseng is a medicinal plant historically used to treat fatigue,
-                                    increase energy, and build stamina and resilience (Kim 2013; Ong 2015).
-                                    Scientists gave 32 mg of ginseng extract to 25 healthy male whisky drinkers and
-                                    compared the results to the same level of alcohol consumption without ginseng.
-                                    Those who received ginseng showed lower levels of blood and breath alcohol,
-                                    and they experienced less fatigue, fewer cognitive symptoms, less thirst,
-                                    fewer stomach aches, and reduced hangover severity (Lee, Kwak 2014).
-                                    <br><br>
-                                    Findings from animal research show that ginseng reduces alcohol-related
-                                    tissue injury by inhibiting free radical activity and inflammation
-                                    (Li 2014; Gao 2015) and by increasing rates of alcohol and acetaldehyde
-                                    clearance from the body (Lee, Kim 2014).
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="ingredient right">
-                            <div class="text">
-                                <br>
-                                <span class="h2">Dihydromyricetin (from Vine Tree)</span>
-                                <span class="mg">1200 mg</span>
-                                <br><br>
-                                <p>
-                                    Finally, we come to what may be the most important ingredient
-                                    in our formula: vine tree extract (dihydromyricetin).
-                                    The vine tree is a well-known and scientifically studied herb used for centuries in China,
-                                    Japan, and Korea, where it is taken to fight against liver disorders and as a hangover treatment.
-                                    Over 400 studies on its health benefits (viewable on PubMed)
-                                    show the degree of scientific interest in this extract and
-                                    its power against the side effects of alcohol.
-                                </p>
-                            </div>
-                            <div class="img">
-                                <img src="Vine-Tree.jpg" class="img300">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="thinner">
-                        In addition to protecting the liver against alcohol-related damage (Silva 2020),
-                        recent studies have shown that Vine Tree extract reduces loss of coordination,
-                        slow reaction time, and difficulty with verbal expression.
-                        It promotes the elimination of alcohol from our bodies and reduces alcohol-induced toxicity.
-                        It counteracts intoxication by slowing the absorption of
-                        alcohol and accelerating alcohol metabolization in the liver.
-                        And it helps our bodies break down acetaldehyde.
-                    </p>
-                    <br>
-                    <p class="thinner">
-                        In one study, rats were injected with the equivalent of 20 beers.
-                        Untreated rats recovered within 90 minutes, but the animals treated
-                        with Vine Tree extract sobered up in 5 minutes (Shen, 2012).
-                        Another study discovered that Vine Tree extract reduces learning
-                        and memory impairment due to sleep deprivation (Li, 2019).
-                    </p>
-                    <br>
-                    <p class="thinner">
-                        According to a study (Shen, 2012), the effective dosage of Vine Tree
-                        extract for hangovers is 70mg to 1050mg for a person weighing 150 pounds.
-                        A serving of Alcohol Safeguard (five capsules) has 1200mg.
-                        Vine Tree Extract is considered safe.
-                        No side effects have been reported, even in very large doses.
-                    </p>
-                    <br>
-                    <p class="thinner">
-                        Note: Beware of under-dosed formulations or ones that list dihydromyricetin as
-                        part of a "proprietary formula" without showing the actual amount in the mixture.
-                        Dihydromyricetin is expensive, and when the dosage is not explicitly listed,
-                        it is almost always included in minuscule amounts.
+                    <p style="margin: 64px;">
+                        The villain of our story is acetaldehyde (BOO!).
+                        When we consume alcohol, our bodies convert it into acetaldehyde.
+                        This nasty chemical is 30 times more toxic than alcohol itself.
+                        It is closely related to formaldehyde (which is used for embalming cadavers)
+                        and is a major cause of alcohol's unpleasant side effects and hangovers.
                     </p>
                 </div>
+                <div class="row">
+                    <p style="margin: 64px;">
+                        Acetaldehyde causes nearly all the damage to our brains and bodies that we blame on
+                        alcohol-the skin wrinkling, artery hardening, liver damage, brain damage, cataracts,
+                        decreased resistance to cancer and cardiovascular disease, premature aging, and hangover.
+                        It does this by causing an abnormal chemical process called cross-linking.
+                        This is the same process that converts (tans) soft cattle skin into hard, stiff leather.
+                        Cross-linking is largely responsible for age-related changes
+                        in human skin that make it inflexible, wrinkled, and dry.
+                    </p>
+                    <div class="elevated">
+                        <img src="Crosslinked_Leather.jpg" title="Cross-linked Leather" class="img300">
+                        <span>Cross-linked Leather</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="elevated">
+                        <img src="Aldehyde_dehydrogenase_enzyme.jpg" title="Aldehyde Dehydrogenase" class="img300">
+                        <span>Aldehyde Dehydrogenase</span>
+                    </div>
+                    <p style="margin: 64px;">
+                        Our hero is an enzyme called aldehyde dehydrogenase (YAY!).
+                        It transforms the toxic acetaldehyde into harmless common vinegar.
+                        But when we drink alcohol, acetaldehyde is made faster
+                        than the heroic aldehyde enzyme can eliminate it.
+                        We designed our formula to protect ourselves from
+                        acetaldehyde toxicity and vanquish the villain.
+                        We attack this problem from every angle by
+                        combining a wide array of nutritional supplements.
+                    </p>
+                </div>
+
+                <br><br><br>
+                <hr>
+                <br><br><br>
+
+                <div class="row">
+                    <p style="margin: 64px;">
+                        A scientist at the National Cancer Institute named Herbert Sprince, PhD.
+                        found that when rodents were given an "LD-90" dose of acetaldehyde
+                        (the amount that would typically kill 90% of the animals)
+                        and were also given vitamins B1 and C and cysteine,
+                        these toxic effects were blocked entirely-none of the treated
+                        animals succumbed to the deadly dose of acetaldehyde.
+                        <span class="reference Sprince-1975 left"><a href="#Sprince-1975-reference">[35]</a></span>
+                        Another study found that taking cysteine resulted in a reduction in hangovers,
+                        nausea, and headache following alcohol consumption,
+                        as well as reduced stress and anxiety.
+                        <span class="reference Eriksson-2020 left"><a href="#Eriksson-2020-reference">[6]</a></span>
+                    </p>
+                    <div class="elevated">
+                        <img src="Scientist.jpg" title="Scientist" class="img300">
+                        <span>Scientist</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="elevated">
+                        <img src="Gross.jpg" title="Gross" class="img300">
+                        <span>Gross</span>
+                    </div>
+                    <p style="margin: 64px;">
+                        Eggs are the best source of the amino acid cysteine,
+                        and orange juice is an excellent source of vitamin C.
+                        An old folk remedy for hangovers was to drop a raw egg
+                        into a glass of orange juice and attempt to swill it down.
+                        Now that we have discovered the active ingredients in eggs and OJ,
+                        we no longer have to resort to this revolting remedy!
+                    </p>
+                </div>
+                <div class="row">
+                    <p style="margin: 64px;">
+                        We need to take about 200 mg of cysteine for every alcoholic
+                        drink to block most of the toxic effects of acetaldehyde.
+                        This is the amount of cysteine contained in each
+                        Alcohol Safeguard pill-plus the same amount of Vitamin C,
+                        which is required to keep the cysteine in its activated state and
+                        "on the job" against acetaldehyde.
+                        <span class="reference Eriksson-2020 center"><a href="#Eriksson-2020-reference">[6]</a></span>
+                        <span class="reference McCarty-2013 center"><a href="#McCarty-2013-reference">[21]</a></span>
+                    </p>
+                </div>
+                <hr>
+                <br><br><br>
+
+                <h1>Vitamins</h1>
+                <br>
+                <div class="row table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="top-left">Vitamin</td>
+                                <td>Quantity</td>
+                                <td class="top-right">% RDA</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vitamin B1 (Thiamine)</td>
+                                <td>240 mg</td>
+                                <td>20000%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B2 (Riboflavin)</td>
+                                <td>20 mg</td>
+                                <td>1538%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B3 (N. Ascorbate)</td>
+                                <td>20 mg</td>
+                                <td>125%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B5 (Calcium Pantothenate)</td>
+                                <td>100 mg</td>
+                                <td>2000%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B6 (Pyridoxine HCL)</td>
+                                <td>24 mg</td>
+                                <td>2000%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B7 (Biotin)</td>
+                                <td>100 mcg</td>
+                                <td>333%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B9 (Folic Acid)</td>
+                                <td>400 mcg</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin B12 (Methylcobalamin)</td>
+                                <td>100 mcg</td>
+                                <td>4167%</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamin C (Ascorbic Acid)</td>
+                                <td>1000 mg</td>
+                                <td>1333%</td>
+                            </tr>
+                            <tr>
+                                <td class="bottom-left">Vitamin E (Tocopheryl Acetate)</td>
+                                <td>35 IU</td>
+                                <td class="bottom-right">233%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <img src="Vitamins.jpg" title="Vitamins" style="width: 280px; height: 300px;">
+
+                    <p>
+                        Vitamin B1 is quickly destroyed by acetaldehyde.
+                        A lack of Vitamin B1 has been shown to damage brain cells and cause lethargy,
+                        fatigue, apathy, impaired awareness, loss of equilibrium, disorientation, and memory loss.
+                        When vitamin B1 became available in an injectable form earlier last century,
+                        medical interns discovered they could treat a hangover by taking large doses.
+                        <br><br>
+                        Vitamin B1 is the most important B vitamin to take when consuming alcohol.
+                        <span class="reference Ambadath-2010 right"><a href="#Ambadath-2010-reference">[1]</a></span>
+                        But alcohol depletes all the B vitamins, particularly vitamins
+                        B3, B6, folic acid (Vitamin B9),
+                        <span class="reference Medici-2013 right"><a href="#Medici-2013-reference">[22]</a></span>
+                        and Vitamin B12.
+                        <span class="reference Gibson-2008 right"><a href="#Gibson-2008-reference">[9]</a></span>
+                    </p>
+                </div>
+                <br>
+                <p>
+                    Vitamin B3 has been shown to significantly reduce hangover severity.
+                    <span class="reference Verster-2019 center"><a href="#Verster-2019-reference">[38]</a></span>
+                </p>
+                <br>
+                <p>
+                    A deficiency of vitamin B5 contributes to the hangover symptoms of headache, nausea, and fatigue.
+                    And Vitamin B5 is needed for processing acetaldehyde into vinegar.
+                </p>
+                <br>
+                <p>
+                    Researchers found that people receiving vitamin B6 had significantly fewer hangover
+                    symptoms the following morning than did people receiving a placebo.
+                    <span class="reference Khan-1973 center"><a href="#Khan-1973-reference">[12]</a></span>
+                    Vitamin B6 is required for normal synthesis of both cysteine,
+                    <span class="reference EFSA-2010 center"><a href="#EFSA-2010-reference">[5]</a></span>
+                    and glutathione.
+                    <span class="reference Mosharov-2000 center"><a href="#Mosharov-2000-reference">[23]</a></span>
+                </p>
+                <br>
+                <p>
+                    Another way acetaldehyde causes damage is by creating dangerous
+                    and reactive chemical fragments called free radicals.
+                    <span class="reference Han-2016 center"><a href="#Han-2016-reference">[10]</a></span>
+                    Our bodies must have an ample supply of antioxidants to neutralize these chemicals.
+                    Our formula includes generous amounts of free radical-controlling nutrients.
+                    Vitamins B1, B5, B6, C, E, and glutathione are all free radical scavengers,
+                    as is the zinc-dependent enzyme SOD.
+                    <span class="reference McCarty-2013 center"><a href="#McCarty-2013-reference">[21]</a></span>
+                    <span class="reference Das-2010 center"><a href="#Das-2010-reference">[4]</a></span>
+                </p>
+
+                <br><br><br>
+                <hr>
+                <br><br><br>
+
+                <h1>Electrolytes and Minerals</h1>
+                <br>
+                <div class="row table">
+                    <p>
+                        Alcohol is a diuretic that causes our bodies to lose water.
+                        <span class="reference Hobson-2010 left"><a href="#Hobson-2010-reference">[11]</a></span>
+                        And we lose electrolytes along with that water.
+                        Electrolytes are minerals that carry an electric charge
+                        and help with muscle, brain, and nerve function.
+                        Common electrolytes include sodium, potassium, calcium, and magnesium
+                        (all of which are included in our formula).
+                    </p>
+                    
+                    <img src="Minerals.jpg" title="Minerals" style="width: 280px; height: 287px;">
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="top-left">Mineral</td>
+                                <td>Quantity</td>
+                                <td class="top-right">% RDA</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calcium (Carbonate)</td>
+                                <td>50 mg</td>
+                                <td>4%</td>
+                            </tr>
+                            <tr>
+                                <td>Magnesium (Carbonate)</td>
+                                <td>50 mg</td>
+                                <td>12%</td>
+                            </tr>
+                            <tr>
+                                <td>Potassium (Carbonate)</td>
+                                <td>100 mg</td>
+                                <td>3%</td>
+                            </tr>
+                            <tr>
+                                <td>Selenium (Selenomethionine)</td>
+                                <td>100 mcg</td>
+                                <td>182%</td>
+                            </tr>
+                            <tr>
+                                <td>Sodium (Pink Himalayan Salt)</td>
+                                <td>100 mg</td>
+                                <td>4%</td>
+                            </tr>
+                            <tr>
+                                <td class="bottom-left">Zinc (Zinc Gluconate)</td>
+                                <td>11 mg</td>
+                                <td class="bottom-right">100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <p>
+                    Electrolytes are crucial for the body's nerve responses,
+                    muscle contractions, and water balance.
+                    Low levels of potassium can cause feelings of weakness and shakiness.
+                    Low magnesium levels can cause nerves to fire too easily - even from minor stimuli.
+                    This can result in jangled nerves where even mild noises sound excessively loud,
+                    lights seem too bright, and emotional reactions are exaggerated.
+                    <span class="reference Min-2010 center"><a href="#Min-2010-reference">[20]</a></span>
+                    <span class="reference Romani-2008 center"><a href="#Romani-2008-reference">[28]</a></span>
+                </p>
+                <br>
+                <p>
+                    Zinc has been shown to significantly reduce vomiting and hangover severity.
+                    <span class="reference Verster-2019 center"><a href="#Verster-2019-reference">[38]</a></span>
+                </p>
+                <br>
+                <p>
+                    Selenium is needed for the proper function of glutathione.
+                    Heavy drinking reduces blood and liver selenium levels,
+                    resulting in lower glutathione activity.
+                    <span class="reference Rua-2014 center"><a href="#Rua-2014-reference">[30]</a></span>
+                    <span class="reference Ojeda-2015 center"><a href="#Ojeda-2015-reference">[24]</a></span>
+                </p>
+
+                <br><br><br>
+                <hr>
+                <br><br><br>
+
+                <h1>Glutathione Boosters</h1>
+                <br>
+                <div class="row table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="top-left">Glutathione Boosters</td>
+                                <td class="top-right">Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alpha Lipoic Acid</td>
+                                <td>100 mg</td>
+                            </tr>
+                            <tr>
+                                <td>L-Cysteine HCL</td>
+                                <td>1000 mg</td>
+                            </tr>
+                            <tr>
+                                <td>L-Glutamic Acid HCL</td>
+                                <td>100 mg</td>
+                            </tr>
+                            <tr>
+                                <td class="bottom-left">L-Glycine</td>
+                                <td class="bottom-right">50 mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <img src="Glutathione.jpg" title="Glutathione" style="width: 280px; height: 350px; margin: auto;">
+
+                    <p>
+                        Glutathione is the body's primary acetaldehyde (and formaldehyde) detox agent.
+                        It acts as an antioxidant, a free radical scavenger,
+                        and it is sometimes referred to as "the master antioxidant".
+                        Glutathione is composed of cysteine, glutamic acid, and glycine.
+                        Our bodies do not readily absorb glutathione,
+                        but we can make it by taking these three precursors.
+                    </p>
+                </div>
+                <br>
+                <p>
+                    Alcohol Safeguard supplies all three easily-absorbed glutathione
+                    boosters-along with alpha lipoic acid-another powerful antioxidant
+                    that increases our body's ability to make glutathione and our cell's
+                    ability to absorb cysteine.
+                    <span class="reference Chen-2013 center"><a href="#Chen-2013-reference">[2]</a></span>
+                    <span class="reference Lee-2009 center"><a href="#Lee-2009-reference">[14]</a></span>
+                    <span class="reference Sanders-1996 center"><a href="#Sanders-1996-reference">[32]</a></span>
+                    And glutamine (which the body makes from Glutamic Acid) also accelerates alcohol metabolism.
+                    <span class="reference Uneyama-2017 center"><a href="#Uneyama-2017-reference">[36]</a></span>
+                </p>
+
+                <br><br><br>
+                <hr>
+                <br><br><br>
+
+                <h1>Botanicals</h1>
+                <br>
+                <p class="thinner">
+                    Our livers are responsible for detoxifying alcohol.
+                    To function properly, the liver needs all known vitamins, minerals,
+                    and amino acids, plus special nutrients such as alpha lipoic acid.
+                    Some nutrients found in plants promote and even repair liver function.
+                </p>
+                <br>
+                <div class="botanicals">
+                    <div class="ingredient">
+                        <div class="img">
+                            <img src="Milk-Thistle.png" title="Milk Thistle" class="img300">
+                        </div>
+                        <div class="text">
+                            <br>
+                            <span class="h2">Milk Thistle Extract</span>
+                            <span class="mg">200 mg</span>
+                            <br><br>
+                            <p>
+                                Milk Thistle extract is a potent antioxidant,
+                                widely used throughout Europe for treating liver disease.
+                                It protects the liver from alcohol-induced damage -
+                                particularly reductions in liver glutathione levels.
+                                <span class="reference Vargas-Mendoza-2014 right"><a href="#Vargas-Mendoza-2014-reference">[37]</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ingredient right">
+                        <div class="text">
+                            <br>
+                            <span class="h2">Theanine</span>
+                            <span class="mg">100 mg</span>
+                            <br><br>
+                            <p>
+                                Green tea is the best source of this amino acid.
+                                It has been shown to protect our brains from alcohol by blocking free radicals,
+                                counteracting the loss of glutathione, improving sleep, and breaking down acetaldehyde.
+                                It can protect against alcoholic liver injury,
+                                <span class="reference Li-2012 left"><a href="#Li-2012-reference">[19]</a></span>
+                                and it can also make you feel less intoxicated.
+                                When researchers gave theanine to mice, it reduced blood levels of alcohol.
+                                <span class="reference Sadzuka-2005 left"><a href="#Sadzuka-2005-reference">[31]</a></span>
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="Theanine.jpg" title="Theanine" class="img300">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ingredient">
+                        <div class="img">
+                            <img src="Ginger.jpg" title="Ginger" class="img300">
+                        </div>
+                        <div class="text">
+                            <br>
+                            <span class="h2">Ginger Extract</span>
+                            <span class="mg">180 mg</span>
+                            <br><br>
+                            <p>
+                                Ginger is a traditional Chinese herbal medicine.
+                                It is an antioxidant, and it protects the liver,
+                                and it has been used for centuries as a hangover treatment.
+                                <span class="reference Fang-2016 right"><a href="#Fang-2016-reference">[7]</a></span>
+                                It has anti-sickness properties that may help settle upset stomachs,
+                                and it is an effective remedy for nausea.
+                                <span class="reference Palatty-2013 right"><a href="#Palatty-2013-reference">[26]</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ingredient right">
+                        <div class="text">
+                            <br>
+                            <span class="h2">Prickly Pear Extract</span>
+                            <span class="mg">150 mg</span>
+                            <br><br>
+                            <p>
+                                The delicious red fruit of the pear cactus has strong
+                                antioxidant properties and it is a proven hangover remedy.
+                                Research has shown that the fruit reduces hangover symptoms,
+                                including nausea and dry mouth.
+                                <span class="reference Wiese-2004 left"><a href="#Wiese-2004-reference">[39]</a></span>
+                                According to this study, prickly pear may cut hangover severity by half.
+                                And it has shown strong liver-protective effects when
+                                animals are exposed to high levels of alcohol.
+                                <span class="reference Rouma-2012 left"><a href="#Rouma-2012-reference">[29]</a></span>
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="Prickly-Pear.jpg" title="Prickly Pear" class="img300">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ingredient">
+                        <div class="img">
+                            <img src="Ginseng.jpg" title="Ginseng" class="img300">
+                        </div>
+                        <div class="text">
+                            <br>
+                            <span class="h2">Ginseng Extract</span>
+                            <span class="mg">160 mg</span>
+                            <br><br>
+                            <p>
+                                Korean Red Ginseng is a medicinal plant historically used to treat fatigue,
+                                increase energy, and build stamina and resilience.
+                                <span class="reference Kim-2013 right"><a href="#Kim-2013-reference">[13]</a></span>
+                                <span class="reference Ong-2015 right"><a href="#Ong-2015-reference">[25]</a></span>
+                                Scientists gave 32 mg of ginseng extract to 25 healthy male whisky drinkers and
+                                compared the results to the same level of alcohol consumption without ginseng.
+                                Those who received ginseng showed lower levels of blood and breath alcohol,
+                                and they experienced less fatigue, fewer cognitive symptoms, less thirst,
+                                fewer stomach aches, and reduced hangover severity.
+                                <span class="reference Lee-Kwak-2014 right"><a href="#Lee-Kwak-2014-reference">[15]</a></span>
+                                <br><br>
+                                Findings from animal research show that ginseng reduces alcohol-related
+                                tissue injury by inhibiting free radical activity and inflammation
+                                <span class="reference Li-2014 right"><a href="#Li-2014-reference">[18]</a></span>
+                                <span class="reference Gao-2015 right"><a href="#Gao-2015-reference">[8]</a></span>
+                                and by increasing rates of alcohol and acetaldehyde
+                                clearance from the body.
+                                <span class="reference Lee-Kim-2014 right"><a href="#Lee-Kim-2014-reference">[16]</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ingredient right">
+                        <div class="text">
+                            <br>
+                            <span class="h2">Dihydromyricetin (from Vine Tree)</span>
+                            <span class="mg">1200 mg</span>
+                            <br><br>
+                            <p>
+                                Finally, we come to what may be the most important ingredient
+                                in our formula: vine tree extract (dihydromyricetin).
+                                The vine tree is a well-known and scientifically studied herb used for centuries in China,
+                                Japan, and Korea, where it is taken to fight against liver disorders and as a hangover treatment.
+                                Over 400 studies on its health benefits (viewable on PubMed)
+                                show the degree of scientific interest in this extract and
+                                its power against the side effects of alcohol.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="Vine-Tree.jpg" title="Vine Tree" class="img300">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="thinner">
+                    In addition to protecting the liver against alcohol-related damage,
+                    <span class="reference Silva-2020 center"><a href="#Silva-2020-reference">[34]</a></span>
+                    recent studies have shown that Vine Tree extract reduces loss of coordination,
+                    slow reaction time, and difficulty with verbal expression.
+                    It promotes the elimination of alcohol from our bodies and reduces alcohol-induced toxicity.
+                    It counteracts intoxication by slowing the absorption of
+                    alcohol and accelerating alcohol metabolization in the liver.
+                    And it helps our bodies break down acetaldehyde.
+                </p>
+                <br>
+                <p class="thinner">
+                    In one study, rats were injected with the equivalent of 20 beers.
+                    Untreated rats recovered within 90 minutes, but the animals treated
+                    with Vine Tree extract sobered up in 5 minutes.
+                    <span class="reference Shen-2012 center"><a href="#Shen-2012-reference">[33]</a></span>
+                    Another study discovered that Vine Tree extract reduces learning
+                    and memory impairment due to sleep deprivation.
+                    <span class="reference Li-2019 center"><a href="#Li-2019-reference">[17]</a></span>
+                </p>
+                <br>
+                <p class="thinner">
+                    According to a study,
+                    <span class="reference Shen-2012 center"><a href="#Shen-2012-reference">[33]</a></span>
+                    the effective dosage of Vine Tree
+                    extract for hangovers is 70mg to 1050mg for a person weighing 150 pounds.
+                    A serving of Alcohol Safeguard (five capsules) has 1200mg.
+                    Vine Tree Extract is considered safe.
+                    No side effects have been reported, even in very large doses.
+                </p>
+                <br>
+                <p class="thinner">
+                    Note: Beware of under-dosed formulations or ones that list dihydromyricetin as
+                    part of a "proprietary formula" without showing the actual amount in the mixture.
+                    Dihydromyricetin is expensive, and when the dosage is not explicitly listed,
+                    it is almost always included in minuscule amounts.
+                </p>
 
                 <br><br><br>
                 <hr>
@@ -768,231 +614,212 @@
                 <br>
                 <ol style="margin-left: 64px; margin-right: 64px;">
                     <li id="Ambadath-2010-reference">
-                        Ambadath V, Comparative study of the efficacy of ascorbic acid (Vitamin C),
-                        quercetin, and thiamine (Vitamin B1) for reversing ethanol-induced toxicity.
+                        Ambadath V, Comparative study of the efficacy of ascorbic acid
+                        <span class="parenthesis">(Vitamin C)</span>,
+                        quercetin, and thiamine
+                        <span class="parenthesis">(Vitamin B1)</span>
+                        for reversing ethanol-induced toxicity.
                         Journal of medicinal food. Dec 2010;13(6):1485-1489.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Chen-2013-reference">
                         Chen Y, Glutathione defense mechanism in liver injury: Insights from animal models.
                         Food and chemical toxicology: an international journal published for the
                         British Industrial Biological Research Association. Oct 2013;60:38-44.
                     </li>
-                    <br>
-                    <li>
+                    <li style="color: #f00;">
                         Coghlan, A. Chinese tree extract stops rats getting drunk.
                         New Scientist. Published online, 9 January 2012.
                     </li>
-                    <br>
                     <li id="Das-2010-reference">
                         Das SK, Protective effect of resveratrol and vitamin E against ethanol-induced
                         oxidative damage in mice: biochemical and immunological basis.
                         Indian journal of biochemistry & biophysics. Feb 2010;47(1):32-37.
                     </li>
-                    <br>
                     <li id="EFSA-2010-reference">
                         EFSA Journal, Scientific opinion on the substantiation of health
                         claims related to vitamin B6" 2010. doi:10.2903/j.efsa.2010.1759
                     </li>
-                    <br>
                     <li id="Eriksson-2020-reference">
                         Eriksson CJP, L-Cysteine containing vitamin supplement which prevents or alleviates
                         alcohol-related hangover symptoms: nausea, headache, stress, and anxiety.
                         Alcohol. Oct 20 2020;55(6):660-666. doi:10.1093/alcalc/agaa082
                     </li>
-                    <br>
-                    <li>
+                    <li id="Fang-2016-reference">
                         Fang W, Natural Products for the Prevention and
                         Treatment of Hangover and Alcohol Use Disorder.
                         Molecules 2016, 21(1), 64;
                     </li>
-                    <br>
-                    <li>
-                        Gao Y, Anti-inflammatory function of ginsenoside Rg1 (ginseng extract) on alcoholic hepatitis
+                    <li id="Gao-2015-reference">
+                        Gao Y, Anti-inflammatory function of ginsenoside Rg1
+                        <span class="parenthesis">(ginseng extract)</span>
+                        on alcoholic hepatitis
                         through glucocorticoid receptor related nuclear factor-kappa B pathway.
                         Journal of Ethnopharmacology. Sep 15 2015;173:231-240.
                     </li>
-                    <br>
                     <li id="Gibson-2008-reference">
                         Gibson A, Alcohol increases homocysteine and reduces
                         B vitamin concentration in healthy male volunteers.
                         2008 Nov;101(11):881-7
                     </li>
-                    <br>
                     <li id="Han-2016-reference">
                         Han KH, Relationships among alcoholic liver disease,
                         antioxidants, and antioxidant enzymes.
                         World journal of gastroenterology: WJG. Jan 7 2016;22(1):37-49.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Hobson-2010-reference">
                         Hobson R, Hydration status and the diuretic action
                         of a small dose of alcohol. 2010 Jul-Aug;45(4):366-73.
                     </li>
-                    <br>
                     <li id="Khan-1973-reference">
                         Khan MA, Alcohol-induced hangover.
-                        A double-blind comparison of pyritinol (Vitamin B6)
+                        A double-blind comparison of pyritinol
+                        <span class="parenthesis">(Vitamin B6)</span>
                         and placebo in preventing hangover symptoms.
                         Quarterly journal of studies on alcohol. Dec 1973;34(4):1195-1201.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Kim-2013-reference">
                         Kim HG, Antifatigue effects of Panax ginseng:
                         a randomised, double-blind, placebo-controlled trial.
                         PloS one. 2013;8(4):e61271.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Lee-2009-reference">
                         Lee HS, Effects of a preparation of combined
                         glutathione-enriched yeast ... extracts on ethanol hangover.
                         Journal of medicinal food. Dec 2009;12(6):1359-1367.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Lee-Kwak-2014-reference">
                         Lee MH, Kwak JH, Red ginseng relieves the effects of alcohol consumption
                         and hangover symptoms in healthy men: a randomized crossover study.
                         Food Funct. Mar 2014;5(3):528-534.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Lee-Kim-2014-reference">
                         Lee DI, Kim ST, Ginsenoside-free molecules from steam-dried ginseng berry
                         promote ethanol metabolism: an alternative choice for an alcohol hangover.
                         J Food Sci. Jul 2014;79(7):C1323-1330.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Li-2019-reference">
                         Li et al. Dihydromyricetin ameliorates memory
                         impairment induced by acute sleep deprivation.
                         European Journal of Pharmacology (2019). 
                     </li>
-                    <br>
-                    <li>
+                    <li id="Li-2014-reference">
                         Li JP, Nrf2 pathway activation contributes to anti-fibrosis effects of
-                        ginsenoside Rg1 (ginseng extract) in a rat model of alcohol- and CCl4-induced hepatic fibrosis.
+                        ginsenoside Rg1
+                        <span class="parenthesis">(ginseng extract)</span>
+                        in a rat model of alcohol- and CCl4-induced hepatic fibrosis.
                         Acta pharmacologica Sinica. Aug 2014;35(8):1031-1044.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Li-2012-reference">
                         Li, l-Theanine prevents alcoholic liver injury through
                         enhancing the antioxidant capability of hepatocytes.
                         Food Chem Toxicol. 2012 Feb;50(2):363-72.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Min-2010-reference">
                         Min JA, The application of minerals in managing
                         alcohol hangover: a preliminary review.
                         Current drug abuse reviews. Jun 2010;3(2):110-115.
                     </li>
-                    <br>
                     <li id="McCarty-2013-reference">
                         McCarty MF. Nutraceutical strategies for
                         ameliorating the toxic effects of alcohol.
                         Med Hypotheses. Apr 2013;80(4):456-462.
                     </li>
-                    <br>
                     <li id="Medici-2013-reference">
-                        Medici V, Folate (Vitamin B9), alcohol, and liver disease.
+                        Medici V, Folate
+                        <span class="parenthesis">(Vitamin B9)</span>,
+                        alcohol, and liver disease.
                         Mol Nutr Food Res. Apr 2013;57(4):596-606.
                     </li>
-                    <br>
                     <li id="Mosharov-2000-reference">
                         Mosharov, The quantitatively important relationship between
                         homocysteine metabolism and glutathione synthesis by the
                         transsulfuration pathway and its regulation by redox changes.
                         Biochemistry. 2000;39:13005-13011.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Ojeda-2015-reference">
                         Ojeda ML, Binge drinking during adolescence disrupts selenium
                         homeostasis and its main hepatic selenoprotein expression.
                         Alcohol Clin Exp Res. May 2015;39(5):818-826.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Ong-2015-reference">
                         Ong WY, Protective effects of ginseng on neurological disorders.
                         Front Aging Neurosci. 2015;7:129.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Palatty-2013-reference">
                         Palatty, Ginger in the prevention of nausea and vomiting: a review.
                         Review Crit Rev Food Sci Nutr. 2013;53(7):659-69.
                     </li>
-                    <br>
-                    <li>
+                    <li style="color: #f00;">
                         Pittler MH, Interventions for preventing or treating alcohol hangover:
                         a systematic review of randomized controlled trials.
                         BMJ (Clinical research ed.). Dec 24 2005;331(7531):1515-1518.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Romani-2008-reference">
                         Romani AM, Magnesium homeostasis and alcohol consumption.
                         Magnesium research: official organ of the International
                         Society for the Development of Research on Magnesium.
                         Dec 2008;21(4):197-204.
                     </li>
-                    <br>
-                    <li>
-                        Rouma K. Evaluation of Opuntia ficus indica f. inermis (Prickly Pear)
+                    <li id="Rouma-2012-reference">
+                        Rouma K. Evaluation of Opuntia ficus indica f. inermis
+                        <span class="parenthesis">(Prickly Pear)</span>
                         fruit juice hepatoprotective effect upon alcohol toxicity in rats.
                         Gen. Physiol. Biophys. 2012, 31, 335-342.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Rua-2014-reference">
                         Rua RM, Serum selenium levels and oxidative balance as differential markers in
                         hepatic damage caused by alcohol. Life sciences. Jan 17 2014;94(2):158-163.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Sadzuka-2005-reference">
                         Sadzuka Y, Effects of theanine on alcohol metabolism and hepatic toxicity
                         Biol Pharm Bull 2005 Sep;28(9):1702-6. doi: 10.1248/bpb.28.1702.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Sanders-1996-reference">
                         Sanders, A relatively unknown antioxidant, alpha-lipoic acid,
                         may be more potent than vitamins C and E.
                         Press Release University of California at Berkeley, Public Information Office.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Shen-2012-reference">
                         Shen Ye, Dihydromyricetin as a novel anti-alcohol intoxication
                         medication Journal of Neuroscience 4 January 2012, 32 (1) 390-401
                     </li>
-                    <br>
-                    <li>
+                    <li id="Silva-2020-reference">
                         Silva J, Dihydromyricetin protects the liver via changes in
-                        lipid metabolism and enhanced ethanol (alcohol) metabolism.
+                        lipid metabolism and enhanced ethanol
+                        <span class="parenthesis">(alcohol)</span>
+                        metabolism.
                         Alcohol Clin Exp Res 2020 May;44(5):1046-1060. 
                     </li>
-                    <br>
                     <li id="Sprince-1975-reference">
-                        Sprince, Protective action of ascorbic acid (vitamin C) and sulfur
-                        compounds (cysteine) against acetaldehyde toxicity:
+                        Sprince, Protective action of ascorbic acid
+                        <span class="parenthesis">(vitamin C)</span>
+                        and sulfur compounds
+                        <span class="parenthesis">(cysteine)</span>
+                        against acetaldehyde toxicity:
                         implications in alcoholism and smoking. Agents and Actions 1975 May;5(2):164-73.
                     </li>
-                    <br>
-                    <li>
+                    <li id="Uneyama-2017-reference">
                         Uneyama, New functions and potential applications of amino acids,
                         Adv Biochem Eng Biotechnol 2017;159:273-287.
                     </li>
-                    <br>
-                    <li>
-                        Vargas-Mendoza N, Hepatoprotective effect of silymarin (Milk Thistle extract).
+                    <li id="Vargas-Mendoza-2014-reference">
+                        Vargas-Mendoza N, Hepatoprotective effect of silymarin
+                        <span class="parenthesis">(Milk Thistle extract)</span>.
                         World J Hepatol. Mar 27 2014;6(3):144-149.
                     </li>
-                    <br>
                     <li id="Verster-2019-reference">
                         Verster, Dietary nutrient intake, alcohol metabolism, and hangover severity.
                         J Clin Med. 2019 Sep; 8(9): 1316.
                     </li>
-                    <br>
                     <li id="Wiese-2004-reference">
-                        Wiese J, Effect of Opuntia ficus indica (Prickly Pear)
+                        Wiese J, Effect of Opuntia ficus indica
+                        <span class="parenthesis">(Prickly Pear)</span>
                         on symptoms of the alcohol hangover.
                         Arch Intern Med. 2004;164(12):1334-1340.
                     </li>
                 </ol>
             </div>
+
             <div id="bottom-banner">
                 <p>
                     <a>Terms</a>
@@ -1003,7 +830,9 @@
                 </p>
                 <br>
                 <p>
-                    The information contained in this website is for educational and informational purposes only and is not intended as health or medical advice. The statements on this website have not been evaluated by the Food and Drug Administration (FDA).
+                    The information contained in this website is for educational and
+                    informational purposes only and is not intended as health or medical advice.
+                    The statements on this website have not been evaluated by the Food and Drug Administration (FDA).
                     These products are not intended to diagnose, treat, cure or prevent any disease.
                     Consult a physician before taking our supplement if you are on medication,
                     pregnant, breastfeeding, or have a known medical condition.
@@ -1018,229 +847,6 @@
                 </p>
             </div>
         </div>
-        <script>
-            "use strict";
-
-            var references = {
-                "Ambadath-2010": {
-                    "text": "Ambadath V, Comparative study of the efficacy of ascorbic acid (Vitamin C), quercetin, and thiamine (Vitamin B1) for reversing ethanol-induced toxicity. Journal of medicinal food. Dec 2010;13(6):1485-1489.",
-                    "lines": 3
-                },
-                "Das-2010": {
-                    "text": "Das SK, Protective effect of resveratrol and vitamin E against ethanol-induced oxidative damage in mice: biochemical and immunological basis. Indian journal of biochemistry & biophysics. Feb 2010;47(1):32-37.",
-                    "lines": 3
-                },
-                "EFSA-2010": {
-                    "text": "EFSA Journal, Scientific opinion on the substantiation of health claims related to vitamin B6\" 2010. doi:10.2903/j.efsa.2010.1759",
-                    "lines": 2
-                },
-                "Eriksson-2020": {
-                    "text": "Eriksson CJP, L-Cysteine containing vitamin supplement which prevents or alleviates alcohol-related hangover symptoms: nausea, headache, stress, and anxiety. Alcohol. Oct 20 2020;55(6):660-666. doi:10.1093/alcalc/agaa082",
-                    "lines": 4
-                },
-                "Gibson-2008": {
-                    "text": "Gibson A, Alcohol increases homocysteine and reduces B vitamin concentration in healthy male volunteers. 2008 Nov;101(11):881-7",
-                    "lines": 2
-                },
-                "Han-2016": {
-                    "text": "Han KH, Relationships among alcoholic liver disease, antioxidants, and antioxidant enzymes. World journal of gastroenterology: WJG. Jan 7 2016;22(1):37-49.",
-                    "lines": 3
-                },
-                "Khan-1973": {
-                    "text": "Khan MA, Alcohol-induced hangover. A double-blind comparison of pyritinol (Vitamin B6) and placebo in preventing hangover symptoms. Quarterly journal of studies on alcohol. Dec 1973;34(4):1195-1201.",
-                    "lines": 3
-                },
-                "Sprince-1975": {
-                    "text": "Sprince, Protective action of ascorbic acid (vitamin C) and sulfur compounds (cysteine) against acetaldehyde toxicity: implications in alcoholism and smoking. Agents and Actions 1975 May;5(2):164-73.",
-                    "lines": 3
-                },
-                "McCarty-2013": {
-                    "text": "McCarty MF. Nutraceutical strategies for ameliorating the toxic effects of alcohol. Med Hypotheses. Apr 2013;80(4):456-462.",
-                    "lines": 2
-                },
-                "Medici-2013": {
-                    "text": "Medici V, Folate (Vitamin B9), alcohol, and liver disease. Mol Nutr Food Res. Apr 2013;57(4):596-606.",
-                    "lines": 2
-                },
-                "Mosharov-2000": {
-                    "text": "Mosharov, The quantitatively important relationship between homocysteine metabolism and glutathione synthesis by the transsulfuration pathway and its regulation by redox changes. Biochemistry. 2000;39:13005-13011.",
-                    "lines": 4
-                },
-                "Verster-2019": {
-                    "text": "Verster, Dietary nutrient intake, alcohol metabolism, and hangover severity. J Clin Med. 2019 Sep; 8(9): 1316.",
-                    "lines": 2
-                },
-                "Wiese-2004": {
-                    "text": "Wiese J, Effect of Opuntia ficus indica (Prickly Pear) on symptoms of the alcohol hangover. Arch Intern Med. 2004;164(12):1334-1340.",
-                    "lines": 2
-                },
-            };
-
-            var tooltipDelay = 200; // ms
-            var tooltipFallHeight = 24; // px
-            var referenceLinks = document.querySelectorAll(".reference");
-
-            var tooltipOpen = false;
-            var openTooltips = [];
-
-            function closeTooltip(tooltip, caretBorder, caretInner, referenceLink, y, lines) {
-                if (tooltipOpen) return;
-
-                tooltip.style.top  = (y - 22 - 18 * lines) + "px";
-                caretBorder.style.top  = (y - 4.5) + "px";
-                caretInner.style.top  = (y - 5) + "px";
-                tooltip.style.opacity = "1";
-                caretBorder.style.opacity = "1";
-                caretInner.style.opacity = "1";
-                setTimeout(function() {
-                    tooltip.style.top  = (y - 22 - tooltipFallHeight - 18 * lines) + "px";
-                    caretBorder.style.top  = (y - 4.5 - tooltipFallHeight) + "px";
-                    caretInner.style.top  = (y - 5 - tooltipFallHeight) + "px";
-                    tooltip.style.opacity = "0";
-                    caretBorder.style.opacity = "0";
-                    caretInner.style.opacity = "0";
-                }, 1);
-
-                setTimeout(function () {
-                    tooltip.remove();
-                    caretBorder.remove();
-                    caretInner.remove();
-                    referenceLink.onmouseover = e => {
-                        createTooltip(referenceLink);
-                    };
-                }, tooltipDelay);
-            }
-
-            function keepTooltipOpen() {
-                tooltipOpen = true;
-            }
-
-            function createTooltip(referenceLink) {
-                if (tooltipOpen) return;
-                tooltipOpen = true;
-
-                for (var openTooltip of openTooltips) {
-                    tooltipOpen = false;
-                    closeTooltip(
-                        openTooltip.tooltip,
-                        openTooltip.caretBorder,
-                        openTooltip.caretInner,
-                        openTooltip.referenceLink,
-                        openTooltip.y,
-                        openTooltip.lines
-                    );
-                }
-                openTooltips = [];
-
-                var referenceClass = referenceLink.classList[1];
-                var side = referenceLink.classList[2] || "center";
-                var text = references[referenceClass].text;
-                var lines = references[referenceClass].lines;
-                
-                var leftOffset = 15;
-                if (side == "center") leftOffset = 240 + 2;
-                if (side == "right") leftOffset = 480 + 4;
-
-                var tooltip = document.createElement("div");
-                tooltip.classList.add("tooltip");
-                tooltip.style.width = "480px";
-
-                var tooltipText = document.createElement("span");
-                tooltipText.innerHTML = text;
-                tooltipText.style.fontSize = "16px";
-                tooltip.append(tooltipText);
-
-                var rect = referenceLink.getBoundingClientRect();
-                var x = (rect.right + rect.left) / 2 + window.scrollX;
-                var y = rect.top + window.scrollY;
-                tooltip.style.left = (x - leftOffset) + "px";
-
-                var caretBorder = document.createElement("a");
-                caretBorder.href = `#${referenceClass}-reference`;
-                caretBorder.classList.add("caret");
-                caretBorder.classList.add("caret-border");
-                caretBorder.style.left = (x - 6) + "px";
-                caretBorder.onclick = e => {
-                    highlightLink(referenceClass);
-                }
-
-                var caretInner = document.createElement("a");
-                caretInner.href = `#${referenceClass}-reference`;
-                caretInner.classList.add("caret");
-                caretInner.classList.add("caret-inner");
-                caretInner.style.left = (x - 5) + "px";
-                caretInner.onclick = e => {
-                    highlightLink(referenceClass);
-                }
-                
-                tooltip.style.top  = (y - 22 - tooltipFallHeight - 18 * lines) + "px";
-                caretBorder.style.top  = (y - 4.5 - tooltipFallHeight) + "px";
-                caretInner.style.top  = (y - 5 - tooltipFallHeight) + "px";
-                tooltip.style.opacity = "0";
-                caretBorder.style.opacity = "0";
-                caretInner.style.opacity = "0";
-                setTimeout(function() {
-                    tooltip.style.top  = (y - 22 - 18 * lines) + "px";
-                    caretBorder.style.top  = (y - 4.5) + "px";
-                    caretInner.style.top  = (y - 5) + "px";
-                    tooltip.style.opacity = "1";
-                    caretBorder.style.opacity = "1";
-                    caretInner.style.opacity = "1";
-                }, 1);
-
-                document.body.append(tooltip);
-                document.body.append(caretBorder);
-                document.body.append(caretInner);
-
-                openTooltips.push({
-                    "tooltip": tooltip,
-                    "caretBorder": caretBorder,
-                    "caretInner": caretInner,
-                    "referenceLink": referenceLink,
-                    "y": y,
-                    "lines": lines
-                });
-
-                var closeTooltipFunction = function () {
-                    tooltipOpen = false;
-                    setTimeout(function () {
-                        closeTooltip(tooltip, caretBorder, caretInner, referenceLink, y, lines);
-                    }, tooltipDelay);
-                }
-
-                tooltip.onmouseleave       = closeTooltipFunction;
-                caretBorder.onmouseleave   = closeTooltipFunction;
-                caretInner.onmouseleave    = closeTooltipFunction;
-                referenceLink.onmouseleave = closeTooltipFunction;
-
-                tooltip.onmouseover       = keepTooltipOpen;
-                caretBorder.onmouseover   = keepTooltipOpen;
-                caretInner.onmouseover    = keepTooltipOpen;
-                referenceLink.onmouseover = keepTooltipOpen;
-            }
-
-            function highlightLink(referenceClass) {
-                var id = `#${referenceClass}-reference`;
-                var reference = document.querySelector(id);
-                reference.style.backgroundColor = "rgba(153, 51, 255, 0.2)";
-                setTimeout(function () {
-                    reference.style.transition = "background-color 2s";
-                    reference.style.backgroundColor = "#fff";
-                }, 1);
-                setTimeout(function () {
-                    reference.style.transition = "background-color 0s";
-                }, 2000);
-            }
-
-            for (var referenceLink of referenceLinks) {
-                referenceLink.onmouseover = e => {
-                    createTooltip(e.target.parentElement);
-                }
-                referenceLink.children[0].onclick = e => {
-                    var referenceClass = e.target.parentElement.classList[1];
-                    highlightLink(referenceClass);
-                }
-            }
-        </script>
+        <script src="./references.js"></script>
     </body>
 </html>
