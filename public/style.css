@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(153, 51, 255, 0.1);
+    background-color: rgba(0, 170, 0, 0.1);
 }
 
 div#main-box-shadow {
@@ -26,19 +26,33 @@ p {
 
 #top-row {
     width: 960px;
-    height: 24px;
+    height: 100px;
     margin: auto;
     margin-top: 32px;
-    background-color: #93f;
+    background-color: #192;
+
+    display: flex;
+    flex-flow: row;
 
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
+#PPI {
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 75px;
+    transition: opacity 0.2s;
+}
+#PPI:hover {
+    opacity: 0.5;
+}
 
 #nav {
     width: 960px;
-    height: 100px;
-    margin: auto;
+    height: 64px;
     text-align: center;
     display: flex;
     flex-flow: row;
@@ -47,19 +61,11 @@ p {
     font-family: sans-serif;
 
     background-color: #fff;
-
-    border-bottom: 3px double rgba(153, 51, 255, 0.33);;
 }
 
-#nav-left, #nav-right {
-    flex: 1;
-    display: flex;
-}
-
-#nav-left a, #nav-right a {
+#nav a {
     flex: 1;
     margin: auto;
-    text-decoration: none;
     color: #000;
     font-weight: 300;
     padding: 10px;
@@ -69,41 +75,53 @@ p {
 #nav a.active {
     font-weight: bold;
 }
-#nav-left a:hover, #nav-right a:hover {
+#nav a:hover {
     opacity: 0.5;
 }
 
-img.logo {
+a#logo {
+    margin: 7px 32px;
+}
+a#logo img {
     width: 130px;
     height: 86px;
-    margin: 7px 35px;
     transition: opacity 0.2s;
 }
-img.logo:hover {
+a#logo img:hover {
     opacity: 0.75;
 }
 
 hr {
     height: 4px;
-    background-color: #93f;
+    background-color: #0a0;
     border: 1px solid #000;
     border-radius: 3px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
-#bottom-banner {
+div#bottom-banner {
     width: 832px; /* 960 - 64*2 */
     margin: auto;
     margin-bottom: 24px;
-    background-color: #93f;
+    background-color: #192;
     padding: 32px 64px;
     text-align: center;
     color: #fff;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 }
+div#bottom-banner p#FDA-statement {
+    text-align: left;
+}
 
 h1 {
     text-align: center;
+    font-family: sans-serif;
+}
+h1 sup {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 p.thinner {
@@ -116,6 +134,10 @@ img.img300 {
     height: 300px;
 }
 
+p#weapon {
+    text-align: center;
+    font-family: sans-serif;
+}
 
 
 
