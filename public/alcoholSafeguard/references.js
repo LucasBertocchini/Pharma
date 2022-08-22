@@ -4,6 +4,9 @@ var references = {
     "Ambadath-2010": {
         "lines": 3
     },
+    "Chapman-1970": {
+        "lines": 2
+    },
     "Chen-2013": {
         "lines": 4
     },
@@ -27,6 +30,9 @@ var references = {
     },
     "Gibson-2008": {
         "lines": 2
+    },
+    "Gould-2019": {
+        "lines": 3
     },
     "Han-2016": {
         "lines": 3
@@ -61,6 +67,9 @@ var references = {
     "McCarty-2013": {
         "lines": 2
     },
+    "McCarty-2018": {
+        "lines": 3
+    },
     "Medici-2013": {
         "lines": 2
     },
@@ -94,6 +103,9 @@ var references = {
     "Sanders-1996": {
         "lines": 3
     },
+    "Sastre-1996": {
+        "lines": 2
+    },
     "Shen-2012": {
         "lines": 2
     },
@@ -114,6 +126,9 @@ var references = {
     },
     "Wiese-2004": {
         "lines": 2
+    },
+    "Yang-1995": {
+        "lines": 3
     },
 };
 
