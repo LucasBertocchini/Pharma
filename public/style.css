@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(0, 170, 0, 0.1);
+    background-color: rgba(0, 170, 63, 0.1);
 }
 
 div#main-box-shadow {
@@ -37,18 +37,6 @@ p {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
-#PPI {
-    font-size: large;
-    font-family: sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 75px;
-    transition: opacity 0.2s;
-}
-#PPI:hover {
-    opacity: 0.5;
-}
 
 #nav {
     width: 960px;
@@ -80,12 +68,14 @@ p {
 }
 
 a#logo {
-    margin: 7px 32px;
+    padding: 9px 32px;
 }
 a#logo img {
-    width: 130px;
-    height: 86px;
+    width: 488px;
+    height: 82px;
     transition: opacity 0.2s;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #000);
 }
 a#logo img:hover {
     opacity: 0.75;

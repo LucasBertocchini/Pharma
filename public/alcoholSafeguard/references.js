@@ -20,7 +20,7 @@ var references = {
         "lines": 2
     },
     "Eriksson-2020": {
-        "lines": 4
+        "lines": 3
     },
     "Fang-2016": {
         "lines": 2
@@ -127,6 +127,9 @@ var references = {
     "Wiese-2004": {
         "lines": 2
     },
+    "Watanabe-1985": {
+        "lines": 3
+    },
     "Yang-1995": {
         "lines": 3
     },
@@ -189,13 +192,15 @@ function createTooltip(referenceLink) {
     openTooltips = [];
 
     var referenceClass = referenceLink.classList[1];
-    var side = referenceLink.classList[2] || "center";
     var text = document.querySelector(`#${referenceClass}-reference`).innerHTML;
     var lines = references[referenceClass].lines;
+
+    var offsetLeft = referenceLink.offsetLeft;
+    var offsetRight = document.body.clientWidth - offsetLeft;
     
-    var leftOffset = 15;
-    if (side == "center") leftOffset = 240 + 2;
-    if (side == "right") leftOffset = 480 + 4;
+    var leftOffset = 240 + 2;                                      // center
+    if (offsetLeft < offsetRight - 240) leftOffset = 15;           // left
+    else if (offsetLeft > offsetRight + 240) leftOffset = 480 + 4; // right
 
     var tooltip = document.createElement("div");
     tooltip.classList.add("tooltip");
