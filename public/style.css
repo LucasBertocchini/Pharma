@@ -38,7 +38,7 @@ div#top-row div div {
     height: 204px;
     margin: auto;
     margin-top: 32px;
-    background-image: url("/sky.jpg");
+    background-image: url("./sky.jpg");
 
     display: flex;
 
