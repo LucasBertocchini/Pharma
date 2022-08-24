@@ -21,7 +21,7 @@ div.row.table table td {
     padding: 4px;
 }
 div.row.table table thead {
-    background-color: rgba(0, 136, 0, 0.2);
+    background-color: rgba(135, 180, 235, 0.5);
 }
 div.row.table table tr:nth-child(even) {
     background-color: #ddd;
@@ -79,7 +79,7 @@ div#order {
     text-align: center;
 }
 div#order a {
-    background-color: rgba(0, 170, 0, 0.5);
+    background-color: rgb(95, 228, 252);
     text-align: center;
     font-size: 32px;
     font-family: sans-serif;
@@ -89,14 +89,14 @@ div#order a {
     border: 1px solid #000;
     color: #000;
     text-decoration: none;
-    box-shadow: 0 0 8px #888, inset 0 -1px 4px #080;
+    box-shadow: 0 0 8px #888, inset 0 -1px 4px #000;
     transition: box-shadow 0.1s;
 }
 div#order a:hover {
-    box-shadow: 0 0 8px #888, inset 0 0 0 #080;
+    box-shadow: 0 0 8px #888, inset 0 0 0 #000;
 }
 div#order a:active {
-    box-shadow: 0 0 8px #888, inset 0 1px 4px #080;
+    box-shadow: 0 0 8px #888, inset 0 1px 4px #000;
 }
 
 div.elevated {
